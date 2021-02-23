@@ -9,6 +9,7 @@
         <br>
         <img src="family book cover.png" id="photo">
         <h3 id="member">Family</h3>
+        <h4 id="relationship"></h4>
         <button type="button" id="next" onclick="nextslide()">Next</button>
     </body>
 
@@ -43,12 +44,29 @@
             "Niloy Kumar Baisya",
             "Indrani Baisya",
             "Ankita Baisya",
-            "Priyabrata Baisya, Priyanshu Baisya, Sayoni Baisya (Cousin, Nephew and Aunt)",
+            "Priyabrata Baisya, Priyanshu Baisya, Sayoni Baisya",
+        ]
+        var relation=[
+            "",
+            "Myself",
+            "Mother",
+            "Father",
+            "Maternal Grandmother",
+            "Maternal Grandfather",
+            "Paternal Grandfather",
+            "Paternal Grandmother",
+            "",
+            "Cousin Brother",
+            "Cousin Brother",
+            "Cousin Sister",
+            "Cousin Sister",
+            "Cousin Brother, Nephew, Aunt",
         ]
         var i=0;
         function nextslide(){
             document.getElementById("photo").src=images[i];
             document.getElementById("member").innerHTML=names[i];
+            document.getElementById("relationship").innerHTML=relation[i];
             i++;
             if (i==14){
                 i=0;
