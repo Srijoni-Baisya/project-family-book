@@ -1,0 +1,31 @@
+#photo{
+    height: 480px;
+    width: 360px;
+    border-color: rgb(13, 13, 14);
+    border-width: 5px;
+    border-style: solid;
+}
+body{
+    text-align: center;
+    background: linear-gradient(to right,rgba(223,52,182,89),rgba(242,246,66,91));
+}
+h1{
+    color: darkblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+#next{
+    height: 40px;
+    width: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    background-color: gold;
+    border-width: 3px;
+    border-style: solid;
+    border-color: darkblue;
+}
+h3{
+    font-size: 25px;
+    color:purple;
+}

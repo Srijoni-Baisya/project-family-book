@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>My Family Book</h1>
+        <br>
+        <img src="family book cover.png" id="photo">
+        <h3 id="member">Family</h3>
+        <button type="button" id="next" onclick="nextslide()">Next</button>
+    </body>
+
+    <script>
+        var images=[
+        "intro1.PNG",
+        "Srijoni_Baisya.jpg",
+        "Sudeshna_Baisya.jpg",
+        "Sujay_Kumar_Baisya.jpg",
+        "Bharati_Ghosh.jpg",
+        "Sunil_Ghosh.jpg",
+        "Swapan_Kumar_Baisya.jpg",
+        "Swapna_Baisya.jpg",
+        "intro2.PNG",
+        "Nilak_Kumar_Baisya.jpg",
+        "Niloy_Kumar_Baisya.jpg",
+        "Indrani_Baisya.jpg",
+        "Ankita_Baisya.jpg",
+        "Cousin,Aunt,Nephew.jpg",
+        ]
+        var names=[
+            "",
+            "Srijoni Baisya",
+            "Sudeshna Baisya",
+            "Sujay Kumar Baisya",
+            "Bharati Ghosh",
+            "Sunil Ghosh",
+            "Swapan Kumar Baisya",
+            "Swapna Baisya",
+            "",
+            "Nilak Kumar Baisya",
+            "Niloy Kumar Baisya",
+            "Indrani Baisya",
+            "Ankita Baisya",
+            "Priyabrata Baisya, Priyanshu Baisya, Sayoni Baisya (Cousin, Nephew and Aunt)",
+        ]
+        var i=0;
+        function nextslide(){
+            document.getElementById("photo").src=images[i];
+            document.getElementById("member").innerHTML=names[i];
+            i++;
+            if (i==14){
+                i=0;
+            }
+        }
+    </script>
+</html>
